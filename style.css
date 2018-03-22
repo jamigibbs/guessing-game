@@ -112,7 +112,9 @@ ul {
   color: #6B678E;
 }
 
-.sidebar-right #info a {
+
+/* Modal */
+#info .info-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -121,6 +123,14 @@ ul {
   color: #CBC7E9;
 }
 
-.sidebar-right #info a:hover {
+#info .info-button:hover {
   color: #6B678E;
+}
+
+#info .modal-body p {
+  font-size: 18px;
+}
+
+#info .modal-body img {
+  width: 200px;
 }

@@ -35,8 +35,44 @@
             
           </div>
           <div class="col-sm-6 sidebar-right">
-            <div id="info"><a href="#">?</a></div>
-            <div id='header'>
+            <div id="info">
+
+              <!-- Button trigger modal -->
+              <div class="info-button" data-toggle="modal" data-target="#exampleModalCenter"><a href="#">?</a></div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">The Guessing Game Project</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>The game is simple. The user guesses a number between 1-100. The app indicates if the guess is 'hot' or 'cold' based on how close the guess is to the number they are trying to guess.</p>
+                      <p>The game also keeps track of previous guesses, and give the user a way to reset the game, or get a hint.</p>
+                      <p>This project was completed as part of the <a href="https://www.fullstackacademy.com/">Fullstack Academy</a> cirriculum.</p>
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <img class="" src="img/fa-logo@2x.png" alt="Fullstack Academy">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="img/grace_hopper_academy.png" alt="Grace Hopper Academy">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+              <div id='header'>
                 <h1>Play the Guessing Game</h1>
                 <hr>
                 <h3>enter a number between 1 - 100</h3>

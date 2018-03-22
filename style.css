@@ -16,19 +16,14 @@ ul {
 
 /*** Left Sidebar ***/
 
-.sidebar-right {
-  background-color: white;
-  height: 100%;
-}
-
-#guesses ul li {
-  font-size: 34px;
+.sidebar-left #guesses ul li {
+  font-size: 28px;
   font-weight: 400;
   letter-spacing: 2.5px;
   line-height: 1.8;
 }
 
-#guesses ul li .guessed {
+.sidebar-left #guesses ul li .guessed {
   background-color: #ECEDF0;
   color: #FF8C8C;
   padding: 0 3px;
@@ -43,6 +38,8 @@ ul {
 /*** Right Sidebar ***/
 .sidebar-right {
   position: relative;
+  background-color: white;
+  height: 100%;
 }
 
 .sidebar-right #header {
@@ -110,7 +107,7 @@ ul {
 }
 
 .sidebar-right #menu-btns a, .sidebar-right #menu-btns span {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   color: #6B678E;
 }
@@ -121,5 +118,9 @@ ul {
   right: 0;
   padding: 5px 15px;
   font-weight: 600;
+  color: #CBC7E9;
+}
+
+.sidebar-right #info a:hover {
   color: #6B678E;
 }

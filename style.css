@@ -1,0 +1,125 @@
+html, body, #app, .app-row {
+  background-color: #F7F8FB;
+  height: 100%;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
+  color: #6B678E;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*** Left Sidebar ***/
+
+.sidebar-right {
+  background-color: white;
+  height: 100%;
+}
+
+#guesses ul li {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  line-height: 1.8;
+}
+
+#guesses ul li .guessed {
+  background-color: #ECEDF0;
+  color: #FF8C8C;
+  padding: 0 3px;
+}
+
+.sidebar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Right Sidebar ***/
+.sidebar-right {
+  position: relative;
+}
+
+.sidebar-right #header {
+  text-align: center;
+}
+
+.sidebar-right #header h1 {
+  color: #2A245C;
+  font-weight: 300;
+  font-size: 48;
+  margin-top: 100px;
+}
+
+.sidebar-right hr {
+  width: 250px;
+  color: #C4D0F4;
+}
+
+.sidebar-right #header h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.sidebar-right input[type=text] {
+  border: none;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: #F7F8FB;
+  border-bottom: 5px solid #E4E6EA;
+  font-size: 64px;
+  font-weight: 300;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.sidebar-right input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #efefef;
+}
+.sidebar-right input[type=text]::-moz-placeholder { /* Firefox 19+ */
+  color: #efefef;
+}
+.sidebar-right input[type=text]:-ms-input-placeholder { /* IE 10+ */
+  color: #efefef;
+}
+.sidebar-right input[type=text]:-moz-placeholder { /* Firefox 18- */
+  color: #efefef;
+}
+
+.sidebar-right #message p {
+  font-size: 26px;
+}
+
+.sidebar-right #message i {
+  font-size: 18px;
+}
+
+.sidebar-right #menu-btns {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+}
+
+.sidebar-right #menu-btns a, .sidebar-right #menu-btns span {
+  font-size: 22px;
+  font-weight: 300;
+  color: #6B678E;
+}
+
+.sidebar-right #info a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-weight: 600;
+  color: #6B678E;
+}

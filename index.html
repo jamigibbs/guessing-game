@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>A Guessing Game by Jami Gibbs</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+
+      <div id='app' class="container-fluid">
+        <div class="row app-row">
+          <div class="col-sm-6 sidebar-left">
+
+            <div id='guesses'>
+              <ul>
+                <li>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </li>
+                <li>16 17 18 19 20 21 22 23 24 25 26 </li>
+                <li>28 29 30 31 32 33 34 35 36 37 </li>
+                <li>38 39 40 41 42 43 44 45 46 47 48 </li>
+                <li>49 50 51 52 53 54 <span class="guessed">55</span> 56 57 58 59 </li>
+                <li>60 61 62 63 64 65 66 67 68 69 70 </li>
+                <li>71 72 73 74 75 76 77 78 79 80 81 </li>
+                <li>82 83 84 85 86 87 88 89 90 91 92 </li>
+                <li>93 94 95 96 97 98 99 100</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="col-sm-6 sidebar-right">
+            <div id="info"><a href="#">?</a></div>
+            <div id='header'>
+                <h1>Play the Guessing Game</h1>
+                <hr>
+                <h3>enter a number between 1 - 100</h3>
+              </div>
+      
+              <div id='main' class="text-center">
+                <div id='input-parent'>
+                  <input type="text" name="guess" placeholder="32" maxlength='3'></input>
+                  <div class="clearfix"></div>
+                </div>
+                <div id="message">
+                  <p>Psst... you're cold. <i class="em-svg em-snowflake"></i> Guess lower.</p>
+                </div>
+      
+                <div id="menu-btns">
+                  <a href="#">reset</a> <span>&nbsp; | &nbsp; </span>
+                  <a href="#">hint</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

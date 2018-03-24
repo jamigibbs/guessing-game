@@ -9,5 +9,5 @@ This project is part of the [Fullstack Academy](https://www.fullstackacademy.com
 ### Project Phases
 
 - [x] Create a design and add the HTML and CSS elements
-- [ ] Add backend JavaScript functionality
+- [x] Add backend JavaScript functionality
 - [ ] Add frontend JavaScript functionality

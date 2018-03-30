@@ -23,7 +23,7 @@ Game.prototype.playersGuessSubmission = function(num){
     return "You Lose.";
   }
 
-  return this.checkGuess.call(this)
+  return this.checkGuess();
 }
 
 Game.prototype.checkGuess = function(){

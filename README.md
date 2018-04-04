@@ -6,6 +6,10 @@ The game also keeps track of previous guesses, and give the user a way to reset 
 
 This project is part of the [Fullstack Academy](https://www.fullstackacademy.com/) curriculum.
 
+## Compile Sass from the command line 
+
+`sass --watch stylesheets/main.scss:style.css`
+
 ### Project Phases
 
 - [x] Create a design and add the HTML and CSS elements

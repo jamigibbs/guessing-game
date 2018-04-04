@@ -1,0 +1,20 @@
+.sidebar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #guesses ul li {
+    font-size: 28px;
+    font-weight: $regular;
+    letter-spacing: 2.5px;
+    line-height: 1.8;
+
+    .guessed {
+      background-color: #ECEDF0;
+      color: #FF8C8C;
+      padding: 0 3px;
+    }
+
+  }
+  
+}

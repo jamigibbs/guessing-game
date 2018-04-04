@@ -1,0 +1,18 @@
+@import "colors";
+@import "fonts";
+
+html, body, #app, .app-row {
+  background-color: $base-bg-color;
+  height: 100%;
+}
+
+body{
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $base-font-color;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

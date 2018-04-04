@@ -1,0 +1,20 @@
+#info .info-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-weight: $bold;
+  color: #CBC7E9;
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
+#info .modal-body {
+  p { 
+    font-size: 18px; 
+  }
+  img {
+    width: 200px;
+  }
+}

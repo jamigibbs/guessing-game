@@ -1,0 +1,75 @@
+.sidebar-right {
+  position: relative;
+  background-color: white;
+  height: 100%;
+
+  #header {
+    text-align: center;
+    h1 {
+      color: #2A245C;
+      font-weight: $light;
+      font-size: 48;
+      margin-top: 100px;
+    }
+    h3 {
+      font-style: italic;
+      font-weight: $light;
+      font-size: 24px;
+    }
+  }
+
+  hr {
+    width: 250px;
+    color: #C4D0F4;
+  }
+
+  #message {
+    p {
+      font-size: $base-font-size;
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+
+  #menu-btns {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    a, span {
+      font-size: 18px;
+      font-weight: $light;
+      color: $base-font-color;
+    }
+
+  }
+  
+}
+
+.sidebar-right input[type=text] {
+  border: none;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: $base-bg-color;
+  border-bottom: 5px solid #E4E6EA;
+  font-size: 64px;
+  font-weight: $light;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.sidebar-right input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #efefef;
+}
+.sidebar-right input[type=text]::-moz-placeholder { /* Firefox 19+ */
+  color: #efefef;
+}
+.sidebar-right input[type=text]:-ms-input-placeholder { /* IE 10+ */
+  color: #efefef;
+}
+.sidebar-right input[type=text]:-moz-placeholder { /* Firefox 18- */
+  color: #efefef;
+}

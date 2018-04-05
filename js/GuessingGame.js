@@ -2,6 +2,7 @@ function Game(){
   this.playersGuess = null;
   this.pastGuesses = [];
   this.winningNumber = generateWinningNumber();
+  this.resultCode = null;
 }
 
 Game.prototype.difference = function(){
@@ -14,12 +15,14 @@ Game.prototype.isLower = function(){
 
 Game.prototype.playersGuessSubmission = function(num){
   if(num < 1 || num > 100 || typeof num !== 'number'){
-    throw('That is an invalid guess.');
+    this.resultCode = 4;
+    return 'That is an invalid guess.';
   }
 
   this.playersGuess = num;
 
-  if(this.pastGuesses.length > 3){
+  if(this.pastGuesses.length >= 3){
+    this.resultCode = 0;
     return "You Lose.";
   }
 
@@ -28,16 +31,19 @@ Game.prototype.playersGuessSubmission = function(num){
 
 Game.prototype.checkGuess = function(){
   if(this.playersGuess === this.winningNumber){
+    this.resultCode = 1;
     return 'You Win!'
   }
 
   if(this.pastGuesses.includes(this.playersGuess)){
+    this.resultCode = 2;
     return 'You have already guessed that number.';
   };
 
   this.pastGuesses.push(this.playersGuess);
 
   var diff = this.difference();
+  this.resultCode = 3;
   switch(true){
     case diff < 10:
       return "You\'re burning up!";

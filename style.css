@@ -20,10 +20,14 @@ ul {
     font-weight: 400;
     letter-spacing: 2.5px;
     line-height: 1.8; }
+    .sidebar-left #guesses ul li .guessed, .sidebar-left #guesses ul li .winner {
+      padding: 0 3px; }
     .sidebar-left #guesses ul li .guessed {
       background-color: #ECEDF0;
-      color: #FF8C8C;
-      padding: 0 3px; }
+      color: #FF8C8C; }
+    .sidebar-left #guesses ul li .winner {
+      background-color: #009687;
+      color: white; }
 
 .sidebar-right {
   position: relative;
@@ -37,9 +41,14 @@ ul {
       font-size: 48;
       margin-top: 100px; }
     .sidebar-right #header h3 {
-      font-style: italic;
       font-weight: 300;
       font-size: 24px; }
+    .sidebar-right #header h4 {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 22px; }
+      .sidebar-right #header h4 span {
+        font-weight: bold; }
   .sidebar-right hr {
     width: 250px;
     color: #C4D0F4; }

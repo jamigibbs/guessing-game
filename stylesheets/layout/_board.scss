@@ -9,10 +9,18 @@
     letter-spacing: 2.5px;
     line-height: 1.8;
 
+    .guessed, .winner {
+      padding: 0 3px;
+    }
+
     .guessed {
       background-color: #ECEDF0;
       color: #FF8C8C;
-      padding: 0 3px;
+    }
+
+    .winner {
+      background-color: $winning-color;
+      color: white;
     }
 
   }

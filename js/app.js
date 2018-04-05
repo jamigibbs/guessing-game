@@ -33,8 +33,10 @@ $(function() {
         var element = `#guesses:contains(${number})`;
         
         if(game.resultCode === 1){
+          $('#header h2').text(`You won in ${game.pastGuesses.length + 1} moves!`);
           boardHighlight(winNumElement, winningNumber, 'winner');
         } else {
+          $('#header h2').text(`Sorry, the winning number was ${game.winningNumber}.`);
           boardHighlight(element, number);
           boardHighlight(winNumElement, winningNumber, 'winner');
         }
@@ -59,8 +61,8 @@ $(function() {
     // New instance
     game = new Game();
 
-    // Reset other stuff
-    $('#guess-count').text(4 - game.pastGuesses.length);
+    // Reset messages and other stuff
+    $('#header h2').html(`You have <span id="guess-count">4</span> guesses remaining`);
     $('#message p').remove();
     $('#input-parent').find(':input(:disabled)').prop('disabled', false);
   })

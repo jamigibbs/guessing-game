@@ -31,9 +31,9 @@ $(function() {
         var winningNumber = game.winningNumber;
         var winNumElement = `#guesses:contains(${winningNumber})`;
         var element = `#guesses:contains(${number})`;
-
-        boardHighlight(element, number);
+        
         boardHighlight(winNumElement, winningNumber, 'winner');
+        boardHighlight(element, number);
       }
     }
 

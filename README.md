@@ -1,4 +1,4 @@
-## Guessing Game [WIP]
+## Guessing Game
 
 The game is simple. A user guesses a number between 1-100. The app indicates if the guess is 'hot' or 'cold' based on how close the guess is to the number they are trying to guess.
 

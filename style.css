@@ -40,7 +40,7 @@ ul {
     font-size: 26px; }
   .sidebar-right #message i {
     font-size: 18px; }
-  .sidebar-right input[type=text] {
+  .sidebar-right input[type=number] {
     border: none;
     padding: 10px;
     height: 100px;
@@ -51,20 +51,26 @@ ul {
     font-weight: 300;
     text-align: center;
     margin: 50px 0; }
+  .sidebar-right input[type="number"]::-webkit-outer-spin-button,
+  .sidebar-right input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .sidebar-right input[type="number"] {
+    -moz-appearance: textfield; }
 
-.sidebar-right input[type=text]::-webkit-input-placeholder {
+.sidebar-right input[type=number]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #efefef; }
 
-.sidebar-right input[type=text]::-moz-placeholder {
+.sidebar-right input[type=number]::-moz-placeholder {
   /* Firefox 19+ */
   color: #efefef; }
 
-.sidebar-right input[type=text]:-ms-input-placeholder {
+.sidebar-right input[type=number]:-ms-input-placeholder {
   /* IE 10+ */
   color: #efefef; }
 
-.sidebar-right input[type=text]:-moz-placeholder {
+.sidebar-right input[type=number]:-moz-placeholder {
   /* Firefox 18- */
   color: #efefef; }
 

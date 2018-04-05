@@ -37,14 +37,37 @@ $(function() {
       }
     }
 
-    function boardHighlight(el, value, cssClass){
-      var re = new RegExp( " " + value + " ", 'g' );
-
-      $(el).html(function(__, html){
-        return html.replace(re, ` <span class="guessed ${cssClass}">${value}</span> `);
-      })
-    }
-
   })
+
+  // Reset Button
+  $('#menu-btns #reset').on('click', function(event){
+    event.preventDefault();
+
+    // Reset game board
+    var arr = game.pastGuesses;
+    arr.push(game.playersGuess, game.winningNumber);
+
+    arr.forEach(function(value){
+      var el = `.num-${value}`;
+      $(el).replaceWith( value );
+    })
+
+    // New instance
+    game = new Game();
+
+    // Reset other stuff
+    $('#guess-count').text(4 - game.pastGuesses.length);
+    $('#message p').remove();
+    $('#input-parent').find(':input(:disabled)').prop('disabled', false);
+  })
+
+  function boardHighlight(el, value, cssClass){
+    var re = new RegExp( " " + value + " ", 'g' );
+    var cssClass = cssClass || '';
+
+    $(el).html(function(__, html){
+      return html.replace(re, ` <span class="guessed num-${value} ${cssClass}">${value}</span> `);
+    })
+  }
 
 });

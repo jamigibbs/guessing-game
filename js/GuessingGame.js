@@ -21,7 +21,7 @@ Game.prototype.playersGuessSubmission = function(num){
 
   this.playersGuess = num;
 
-  if(this.pastGuesses.length >= 3){
+  if(this.pastGuesses.length === 3 && num !== this.winningNumber){
     this.resultCode = 0;
     return "You Lose.";
   }

@@ -5,7 +5,7 @@ $(function() {
   // Guess Submitted
   $('#input-parent input').keypress(function(event){
     var keycode = event.keyCode || event.which;
-
+  
     if(keycode == '13'){ // enter key
       var number = +$(this).val();
       var result = game.playersGuessSubmission(number);

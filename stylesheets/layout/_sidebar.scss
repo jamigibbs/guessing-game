@@ -1,30 +1,9 @@
 .sidebar-right {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   height: 100%;
-
-  #header {
-    text-align: center;
-    h1 {
-      color: #2A245C;
-      font-weight: $light;
-      font-size: 48;
-      margin-top: 100px;
-    }
-    h2 {
-      font-style: italic;
-      font-weight: $light;
-      font-size: 24px;
-      span {
-        font-weight: bold
-      }
-    }
-  }
-
-  hr {
-    width: 250px;
-    color: #C4D0F4;
-  }
 
   #message {
     p {
@@ -35,33 +14,19 @@
     }
   }
 
-  #menu-btns {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    margin: auto;
-    a, span {
-      font-size: 18px;
-      font-weight: $light;
-      color: $base-font-color;
-    }
-
+  input[type=text] {
+    border: none;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: $base-bg-color;
+    border-bottom: 5px solid #E4E6EA;
+    font-size: 64px;
+    font-weight: $light;
+    text-align: center;
+    margin: 50px 0;
   }
   
-}
-
-.sidebar-right input[type=text] {
-  border: none;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: $base-bg-color;
-  border-bottom: 5px solid #E4E6EA;
-  font-size: 64px;
-  font-weight: $light;
-  text-align: center;
-  margin: 50px 0;
 }
 
 .sidebar-right input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */

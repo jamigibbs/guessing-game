@@ -1,0 +1,24 @@
+#header {
+  text-align: center;
+
+  hr {
+    width: 250px;
+    color: #C4D0F4;
+  }
+
+  h1 {
+    color: #2A245C;
+    font-weight: $light;
+    font-size: 48;
+  }
+
+  h2 {
+    font-style: italic;
+    font-weight: $light;
+    font-size: 24px;
+    span {
+      font-weight: bold
+    }
+  }
+  
+}

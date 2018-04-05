@@ -15,25 +15,9 @@
   <body>
 
       <div id='app' class="container-fluid">
-        <div class="row app-row">
-          <div class="col-sm-6 sidebar-left">
-
-            <div id='guesses'>
-              <ul>
-                <li> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </li>
-                <li> 16 17 18 19 20 21 22 23 24 25 26 </li>
-                <li> 28 29 30 31 32 33 34 35 36 37 </li>
-                <li> 38 39 40 41 42 43 44 45 46 47 48 </li>
-                <li> 49 50 51 52 53 54 55 56 57 58 59 </li>
-                <li> 60 61 62 63 64 65 66 67 68 69 70 </li>
-                <li> 71 72 73 74 75 76 77 78 79 80 81 </li>
-                <li> 82 83 84 85 86 87 88 89 90 91 92 </li>
-                <li> 93 94 95 96 97 98 99 100 </li>
-              </ul>
-            </div>
-            
-          </div>
-          <div class="col-sm-6 sidebar-right">
+        <div class="row app-row ">
+          <div class="col-12 col-md-6 order-md-12">
+            <div class="sidebar-right">
             <div id="info">
 
               <!-- Button trigger modal -->
@@ -71,25 +55,57 @@
 
             </div>
 
-              <div id='header'>
-                <h1>Play the Guessing Game</h1>
-                <hr>
-                <h2>You have <span id="guess-count">4</span> guesses remaining</h4>
-              </div>
-      
-              <div id='main' class="text-center">
-                <div id='input-parent'>
-                  <input type="text" name="guess" placeholder="32" maxlength='3'></input>
-                  <div class="clearfix"></div>
-                </div>
-                <div id="message"></div>
-      
-                <div id="menu-btns">
-                  <a id="reset" href="#">reset</a> <span>&nbsp; | &nbsp; </span>
-                  <a id="hint" href="#">hint</a>
+            <div class="container">
+
+              <div class="row no-gutters">
+                <div class="col">
+                  <div id='header'>
+                    <h1>Play the Guessing Game</h1>
+                    <hr>
+                    <h2>You have <span id="guess-count">4</span> guesses remaining</h4>
+                  </div>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col">
+                  <div id='main' class="text-center">
+                    <div id='input-parent'>
+                      <input type="text" name="guess" placeholder="32" maxlength='3'></input>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div id="message"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div id="menu-btns">
+                      <a id="reset" href="#">reset</a> <span>&nbsp; | &nbsp; </span>
+                      <a id="hint" href="#">hint</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
+          </div>
+
+          <div class="col-12 col-md-6 sidebar-left">
+            <div class="container">
+              <div id='guesses'>
+                <div class="row ">
+                  <div class="col">
+                    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>

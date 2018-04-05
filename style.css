@@ -14,67 +14,43 @@ ul {
 .sidebar-left {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .sidebar-left #guesses ul li {
+  align-items: center;
+  padding: 1em 2em; }
+  .sidebar-left #guesses {
     font-size: 28px;
     font-weight: 400;
     letter-spacing: 2.5px;
     line-height: 1.8; }
-    .sidebar-left #guesses ul li .guessed, .sidebar-left #guesses ul li .winner {
+    .sidebar-left #guesses .guessed, .sidebar-left #guesses .winner {
       padding: 0 3px; }
-    .sidebar-left #guesses ul li .guessed {
+    .sidebar-left #guesses .guessed {
       background-color: #ECEDF0;
       color: #FF8C8C; }
-    .sidebar-left #guesses ul li .winner {
+    .sidebar-left #guesses .winner {
       background-color: #009687;
       color: white; }
 
 .sidebar-right {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   height: 100%; }
-  .sidebar-right #header {
-    text-align: center; }
-    .sidebar-right #header h1 {
-      color: #2A245C;
-      font-weight: 300;
-      font-size: 48;
-      margin-top: 100px; }
-    .sidebar-right #header h2 {
-      font-style: italic;
-      font-weight: 300;
-      font-size: 24px; }
-      .sidebar-right #header h2 span {
-        font-weight: bold; }
-  .sidebar-right hr {
-    width: 250px;
-    color: #C4D0F4; }
   .sidebar-right #message p {
     font-size: 26px; }
   .sidebar-right #message i {
     font-size: 18px; }
-  .sidebar-right #menu-btns {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    margin: auto; }
-    .sidebar-right #menu-btns a, .sidebar-right #menu-btns span {
-      font-size: 18px;
-      font-weight: 300;
-      color: #6B678E; }
-
-.sidebar-right input[type=text] {
-  border: none;
-  padding: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: #F7F8FB;
-  border-bottom: 5px solid #E4E6EA;
-  font-size: 64px;
-  font-weight: 300;
-  text-align: center;
-  margin: 50px 0; }
+  .sidebar-right input[type=text] {
+    border: none;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #F7F8FB;
+    border-bottom: 5px solid #E4E6EA;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    margin: 50px 0; }
 
 .sidebar-right input[type=text]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -96,15 +72,38 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px 15px;
+  padding: 15px 15px;
   font-weight: 600;
   color: #CBC7E9; }
   #info .info-button:hover {
     color: #6B678E; }
-
 #info .modal-body p {
   font-size: 18px; }
 #info .modal-body img {
   width: 200px; }
+
+#header {
+  text-align: center; }
+  #header hr {
+    width: 250px;
+    color: #C4D0F4; }
+  #header h1 {
+    color: #2A245C;
+    font-weight: 300;
+    font-size: 48; }
+  #header h2 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px; }
+    #header h2 span {
+      font-weight: bold; }
+
+#menu-btns {
+  text-align: center;
+  margin-top: 30px; }
+  #menu-btns a, #menu-btns span {
+    font-size: 18px;
+    font-weight: 300;
+    color: #6B678E; }
 
 /*# sourceMappingURL=style.css.map */

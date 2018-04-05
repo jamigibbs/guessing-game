@@ -61,6 +61,20 @@ $(function() {
     $('#input-parent').find(':input(:disabled)').prop('disabled', false);
   })
 
+  // Hint button
+  $('#menu-btns #hint').on('click', function(event){
+    event.preventDefault();
+    
+    if(game.resultCode > 1 || game.resultCode === null){
+      var hintArr = game.provideHint();
+      var hint = `The winning number is either ${hintArr[0]}, ${hintArr[1]}, or ${hintArr[2]}`;
+  
+      $('#message #hint').remove();
+      $('#message').append(`<p id="hint">${hint}</p>`);
+    }
+
+  })
+
   function boardHighlight(el, value, cssClass){
     var re = new RegExp( " " + value + " ", 'g' );
     var cssClass = cssClass || '';

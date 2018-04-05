@@ -32,8 +32,12 @@ $(function() {
         var winNumElement = `#guesses:contains(${winningNumber})`;
         var element = `#guesses:contains(${number})`;
         
-        boardHighlight(winNumElement, winningNumber, 'winner');
-        boardHighlight(element, number);
+        if(game.resultCode === 1){
+          boardHighlight(winNumElement, winningNumber, 'winner');
+        } else {
+          boardHighlight(element, number);
+          boardHighlight(winNumElement, winningNumber, 'winner');
+        }
       }
     }
 

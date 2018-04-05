@@ -14,4 +14,4 @@ This project is part of the [Fullstack Academy](https://www.fullstackacademy.com
 
 - [x] Create a design and add the HTML and CSS elements
 - [x] Add backend JavaScript functionality
-- [ ] Add frontend JavaScript functionality
+- [x] Add frontend JavaScript functionality

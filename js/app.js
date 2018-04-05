@@ -2,6 +2,7 @@ $(function() {
 
   var game = new Game();
 
+  // Guess Submitted
   $('#input-parent input').keypress(function(event){
     var keycode = event.keyCode || event.which;
 

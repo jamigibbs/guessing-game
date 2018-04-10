@@ -3,6 +3,14 @@ class Game {
     this.playersGuess = null;
     this.pastGuesses = [];
     this.winningNumber = generateWinningNumber();
+
+    /*
+      0: Losing guess (final)
+      1: Winning guess (final)
+      2: Invalid guess (duplicate)
+      3: Valid guess
+      4: Invalid guess (bad type)
+    */
     this.resultCode = null;
   }
 
@@ -42,28 +50,20 @@ class Game {
     }
 
     this.pastGuesses.push(this.playersGuess);
+    this.resultCode = 3;
 
     let diff = this.difference();
-    this.resultCode = 3;
-    switch (true) {
-      case diff < 10:
-        return "You're burning up!";
-        break;
-      case diff < 26:
-        return "You're lukewarm.";
-        break;
-      case diff < 50:
-        return "You're a bit chilly.";
-        break;
-      default:
-        return "You're ice cold!";
-    }
+
+    if (diff < 10) return "You're burning up!";
+    else if (diff < 26) return "You're lukewarm.";
+    else if (diff < 50) return "You're a bit chilly.";
+    else return "You're ice cold!";
   }
 
   provideHint() {
     let winningNum = this.winningNumber;
 
-    let hintArr = [0, 0, 0].map(function(val, i) {
+    let hintArr = [0, 0, 0].map((val, i) => {
       return i !== 0 ? generateWinningNumber() : winningNum;
     });
 

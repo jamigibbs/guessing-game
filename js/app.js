@@ -2,12 +2,12 @@ $(function() {
   let game = new Game();
 
   // Guess Submitted
-  $('#input-parent input').keypress(function(event) {
-    const keycode = event.keyCode || event.which;
+  $('#input-parent input').on('keypress', event => {
+    let keycode = event.keyCode || event.which;
 
-    if (keycode == '13') {
-      // enter key
-      let number = +$(this).val();
+    // enter key
+    if (Number(keycode) === 13) {
+      let number = +$(event.currentTarget).val();
       let result = game.playersGuessSubmission(number);
 
       $('#input-parent input').val('');

@@ -1,14 +1,14 @@
 $(function() {
-  var game = new Game();
+  let game = new Game();
 
   // Guess Submitted
   $('#input-parent input').keypress(function(event) {
-    var keycode = event.keyCode || event.which;
+    const keycode = event.keyCode || event.which;
 
     if (keycode == '13') {
       // enter key
-      var number = +$(this).val();
-      var result = game.playersGuessSubmission(number);
+      let number = +$(this).val();
+      let result = game.playersGuessSubmission(number);
 
       $('#input-parent input').val('');
       $('#message p').remove();
@@ -17,8 +17,8 @@ $(function() {
 
       // Valid guess
       if (game.resultCode === 3) {
-        var hint = game.isLower() ? 'Too low.' : 'Too high.';
-        var element = `#guesses:contains(${number})`;
+        let hint = game.isLower() ? 'Too low.' : 'Too high.';
+        let element = `#guesses:contains(${number})`;
         $('#message p').append(` ${hint}`);
 
         boardHighlight(element, number);
@@ -31,9 +31,9 @@ $(function() {
           .prop('disabled', true);
         $('#guess-count').text(0);
 
-        var winningNumber = game.winningNumber;
-        var winNumElement = `#guesses:contains(${winningNumber})`;
-        var element = `#guesses:contains(${number})`;
+        let winningNumber = game.winningNumber;
+        let winNumElement = `#guesses:contains(${winningNumber})`;
+        let element = `#guesses:contains(${number})`;
 
         if (game.resultCode === 1) {
           $('#header h2').text(
@@ -56,11 +56,11 @@ $(function() {
     event.preventDefault();
 
     // Reset game board
-    var arr = game.pastGuesses;
+    let arr = game.pastGuesses;
     arr.push(game.playersGuess, game.winningNumber);
 
     arr.forEach(function(value) {
-      var el = `.num-${value}`;
+      let el = `.num-${value}`;
       $(el).replaceWith(value);
     });
 
@@ -82,8 +82,8 @@ $(function() {
     event.preventDefault();
 
     if (game.resultCode > 1 || game.resultCode === null) {
-      var hintArr = game.provideHint();
-      var hint = `The winning number is either ${hintArr[0]}, ${
+      let hintArr = game.provideHint();
+      let hint = `The winning number is either ${hintArr[0]}, ${
         hintArr[1]
       }, or ${hintArr[2]}`;
 
@@ -93,8 +93,8 @@ $(function() {
   });
 
   function boardHighlight(el, value, cssClass) {
-    var re = new RegExp(' ' + value + ' ', 'g');
-    var cssClass = cssClass || '';
+    let re = new RegExp(' ' + value + ' ', 'g');
+    cssClass = cssClass || '';
 
     $(el).html(function(__, html) {
       return html.replace(

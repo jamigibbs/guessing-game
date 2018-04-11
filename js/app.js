@@ -10,7 +10,7 @@ $(function() {
       let number = +$(event.currentTarget).val();
       let result = game.playersGuessSubmission(number);
 
-      $('#input-parent input').val('');
+      $(event.currentTarget).val('');
       $('#message p').remove();
       $('#message').append(`<p>${result}</p>`);
       $('#guess-count').text(4 - game.pastGuesses.length);
@@ -52,7 +52,7 @@ $(function() {
   });
 
   // Reset Button
-  $('#menu-btns #reset').on('click', function(event) {
+  $('#menu-btns #reset').on('click', event => {
     event.preventDefault();
 
     // Reset game board
@@ -78,7 +78,7 @@ $(function() {
   });
 
   // Hint button
-  $('#menu-btns #hint').on('click', function(event) {
+  $('#menu-btns #hint').on('click', event => {
     event.preventDefault();
 
     if (game.resultCode > 1 || game.resultCode === null) {
